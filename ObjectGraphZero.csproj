@@ -8,7 +8,7 @@
     <ProjectGuid>{67F9D3A8-F71E-4428-913F-C37AE82CDB24}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ObjectGraphZero</RootNamespace>
+    <RootNamespace>FunctionZero.ObjectGraphZero</RootNamespace>
     <AssemblyName>ObjectGraphZero</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
@@ -35,8 +35,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ObjectGraphZero.cs" />
+    <Compile Include="Factory\FactoryAttributes.cs" />
+    <Compile Include="Factory\FactoryData.cs" />
+    <Compile Include="Factory\IObjectFactory.cs" />
+    <Compile Include="GraphObject.cs" />
+    <Compile Include="ICanInitialise.cs" />
+    <Compile Include="ICanSerialize.cs" />
+    <Compile Include="IContentContainer.cs" />
+    <Compile Include="IGraphObject.cs" />
+    <Compile Include="IObjectConsumer.cs" />
+    <Compile Include="ObjectFactoryDictionary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyObject.cs" />
+    <Compile Include="SerializeData.cs" />
+    <Compile Include="SimpleProxyObject.cs" />
+    <Compile Include="TextFragment.cs" />
+    <Compile Include="XmlDeserializer.cs" />
+    <Compile Include="XmlSerializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
